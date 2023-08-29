@@ -1,0 +1,132 @@
+---
+import { changeLanguage } from "i18next";
+import "../styles/styles.css";
+import i18n from "../../i18next";
+import "../components/navbarStyle.css";
+
+changeLanguage("en");
+---
+
+<html lang={i18n.language}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Looking for a website? Look no further here at Codecials we build entire websites which is SEO focused for ultra fast speeds and findability.">
+		<link rel="icon" type="image/svg+xml" href="/icons/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Codecials. | Terms of Service</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body class="h-auto">
+		<div class='h-20 container mx-auto'>
+			<a href="https://www.codecials.com" class="text-orange text-4xl pt-5 pl-5 block w-max float-left absolute">Code<span class="text-white">cials</span>.</a>
+		</div>
+		<div class="container mx-auto text-[#ECECEC] font-sans pt-5 pl-5 pr-5">
+			<p>
+				{i18n.t('WelcomeToCodecials')}!
+				<br />
+				{i18n.t('TheseTermsofService')}.
+				<br />
+				1. {i18n.t('DefinitionsandInterpretation')}<br />
+					1. {i18n.t('DaI1')}.<br />
+					2. {i18n.t('DaI2')}.<br />
+					3. {i18n.t('DaI3')}.<br />
+					4. {i18n.t('DaI4')}.<br />
+				<br />
+				2. {i18n.t('ServiceAgreement')}<br />
+					1. {i18n.t('SA1')}.<br />
+				<br />
+				3. {i18n.t('IntellectualProperty')}<br />
+					1. {i18n.t('IP1')}.<br />
+					2. {i18n.t('IP2')}.<br />
+				<br />
+				4. {i18n.t('ClientContent')}<br />
+					1. {i18n.t('CC1')}.<br />
+					2. {i18n.t('CC2')}.<br />
+				<br />
+				5. {i18n.t('PaymentandFees')}<br />
+					1. {i18n.t('PF1')}.<br />
+					2. {i18n.t('PF2')}.<br />
+				<br />
+				6. {i18n.t('Confidentiality')}<br />
+					1. {i18n.t('CY1')}.<br />
+				<br />
+				7. {i18n.t('Termination')}<br />
+					1. {i18n.t('T1')}.<br />
+					2. {i18n.t('T2')}.<br />
+				<br />
+				8. {i18n.t('LimitationofLiability')}<br />
+					1. {i18n.t('LoF1')}.<br />
+					2. {i18n.t('LoF2')}.<br />
+				<br />
+				9. {i18n.t('Amendments')}<br />
+					1. {i18n.t('A1')}.<br />
+				<br />
+				10. {i18n.t('GoverningLaw')}<br />
+					1. {i18n.t('GL1')}.<br />
+				<br />
+				11. {i18n.t('Contact')}<br />
+					1. {i18n.t('C1')}.<br />
+				<br />
+				{i18n.t('ByUsingOurWebsite')}!
+			</p>
+		</div>
+		<footer class="bg-gradient-to-t from-indigo-900 to-blue-800 text-white py-10">
+			<div class="container mx-auto px-6 md:px-8">
+			<div class="flex flex-col md:flex-row justify-between items-center">
+				<div class="mb-6 md:mb-0">
+				<h3 class="text-3xl font-bold">Codecials.</h3>
+				</div>
+				<div class="flex flex-col md:flex-row items-center">
+				<div class="mb-4 md:mb-0 md:mr-6 flex items-center">
+					<svg
+					class="w-5 h-5 text-gray-300"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+					>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M22 11.08V12a10 10 0 11-5.93-9.14"
+					></path>
+					</svg>
+					<span class="ml-2 text-sm text-gray-300"><a href="mailto:support&#64;codecials.com">support&#64;codecials.com</a></span>
+				</div>
+				<div class="flex items-center">
+					<svg
+					class="w-5 h-5 text-gray-300"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+					>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M12 22s8-4 8-10V6a4 4 0 00-4-4H8a4 4 0 00-4 4v6c0 6 8 10 8 10z"
+					></path>
+					</svg>
+					<span class="ml-2 text-sm text-gray-300">(31) 0640511025</span>
+				</div>
+				</div>
+			</div>
+			<div class="mt-8 text-center">
+				<p class="text-gray-300 text-sm">&copy; {new Date().getFullYear()} Codecials. All rights reserved.</p>
+				<p class="text-gray-300 text-sm">
+				<a href="/terms-of-service" class="underline">
+					Terms of Service
+				</a>
+				</p>
+			</div>
+			</div>
+		</footer>
+		
+		  
+	</body>
+</html>

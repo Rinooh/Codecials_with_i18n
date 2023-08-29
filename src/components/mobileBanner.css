@@ -1,0 +1,33 @@
+@font-face {
+  font-family: OCRFont;
+  font-display: swap;
+  src: url(fonts/OCRA.ttf);
+}
+
+h1 {
+  font-family: OCRFont;
+}
+
+.custom-underline {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-underline:before {
+  content: '';
+  position: absolute;
+  left    : 12.5%;
+  bottom  : -20px;
+  height  : 1px;
+  width   : 75%;
+  border-bottom:3px solid #F6F8EE;
+}
+
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10%;
+  width: 120%;
+  border-bottom: 3px solid #F6F8EE;
+}

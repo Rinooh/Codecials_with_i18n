@@ -1,0 +1,50 @@
+{
+  "name": "codecials",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev & node --experimental-modules server.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/svelte": "^3.1.0",
+    "@astrojs/tailwind": "^4.0.0",
+    "@eo-locale/detect-user-language": "^1.0.0",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "astro": "^2.10.7",
+    "astro-i18next": "^1.0.0-beta.21",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "i": "^0.3.7",
+    "i18next": "^23.4.2",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "nodemailer": "^6.9.4",
+    "npm": "^9.8.0",
+    "postcss-nesting": "^12.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-i18next": "^13.0.2",
+    "react-intersection-observer": "^9.5.2",
+    "react-simple-animate": "^3.5.2",
+    "react-slick": "^0.29.0",
+    "react-wavify": "^1.8.3",
+    "svelte": "^4.2.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "astro-compress": "1.1.50",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  }
+}

@@ -1,0 +1,162 @@
+---
+import "../../styles/styles.css";
+import "../../components/mobileBanner.css";
+import Navbar from "../../components/Navbar";
+import WaveUp from "../../components/WaveUp";
+import WaveDown from "../../components/WaveDown";
+import OurProjects from "../../components/OurProjects";
+import Pricing from "../../components/Pricing";
+import Info from "../../components/Info";
+import Contact from "../../components/Contact";
+import i18next, { changeLanguage } from "i18next";
+
+changeLanguage("nl");
+
+export const prerender = true;
+---
+
+<html lang={i18next.language}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Looking for a website? Look no further here at Codecials we build entire websites which is SEO focused for ultra fast speeds and findability.">
+		<link rel="icon" type="image/svg+xml" href="/icons/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Codecials.</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<Navbar client:load />
+		<div class='mx-auto min-[1023px]:container select-none'>
+			<h1 class=' py-8 max-[400px]:text-2xl max-[640px]:text-3xl max-[768px]:text-4xl max-[1023px]:text-5xl min-[1024px]:text-7xl text-orange tracking-widest text-center'>Coding <p class="text-white custom-underline">our</p> Goals<a href='#' class="text-white pointer-events-none">.</a></h1>
+			<div class='min-[1024px]:mt-10'>
+			  <div class='w-6/12 float-left'>
+				<img fetchpriority="high" width={454} height={342} class='' src="images/mobileManOnLaptop.png" alt="Man coding on a laptop CSS and PHP" />
+			  </div>
+			  <div class='w-6/12 px-2 float-right'>
+				<h2 class='text-white text-xl max-[640px]:text-xl max-[768px]:text-2xl min-[768px]:text-3xl min-[820px]:mt-24'>
+					“Zet uw online visie om in realiteit met onze ontwikkelaars.”</h2>
+			  </div>
+			  <div class='text-center'>
+				<a href='#contact' class='inline-block text-orange px-8 py-4 my-5 text-xl border-4 rounded-xl hover:border-orange border-white tracking-wider m-auto font-medium'>Begin Gelijk</a>
+			  </div>
+			</div>
+		</div>
+		<WaveUp client:visible />
+		<div style={{ background: '#00244C' }}>
+			<div class='mx-auto min-[1023px]:container min-[1023px]:flex'>
+			  <div class='w-full min-[1024px]:w-6/12 content-center grid'>
+				<h1 class="text-3xl min-[1023px]:text-4xl text-orange tracking-wider pl-5 customWhyUsUnderline font-['Orbitron'] font-bold">Waarom Codecials?</h1>
+				<div class='flex content-center w-full pl-5 mt-5'>
+				  <img width={50} height={50} alt='checkmark' class='w-6 h-fit min-[1023px]:w-10' src="icons/check.png"></img>
+				  <span class='text-white text-xl min-[1023px]:text-2xl tracking-wide pl-2 z-20'>Jong en innovatief</span>
+				</div>
+				<div class='flex content-center w-full pl-5'>
+				  <img width={50} height={50} alt='checkmark' class='w-6 h-fit min-[1023px]:w-10' src="icons/check.png"></img>
+				  <span class='text-white text-xl min-[1023px]:text-2xl tracking-wide pl-2 z-20'>Gevestigd in meerdere landen</span>
+				</div>
+				<div class='flex content-center w-full pl-5'>
+				  <img width={50} height={50} alt='checkmark' class='w-6 h-fit min-[1023px]:w-10' src="icons/check.png"></img>
+				  <span class='text-white text-xl min-[1023px]:text-2xl tracking-wide pl-2 z-20'>Ondersteuning 24/7 beschikbaar</span>
+				</div>
+				<div class='flex content-center w-full pl-5'>
+				  <img width={50} height={50} alt='checkmark' class='w-6 h-fit min-[1023px]:w-10' src="icons/check.png"></img>
+				  <span class='text-white text-xl min-[1023px]:text-2xl tracking-wide pl-2 z-20'>Ervaren met de nieuwste technologieën</span>
+				</div>
+				<div class='flex content-center w-full pl-5'>
+				  <img width={50} height={50} alt='pin' class='w-4 ml-1 z-20 min-[1023px]:w-5 min-[1023px]:ml-3' src="icons/pin.png"></img>
+				  <span class='text-white text-xs min-[1023px]:text-base min-[1023px]:pl-4 tracking-wide pl-3 z-20 mt-1'>s'-Gravenpolder - Zeeland - Nederland</span>
+				</div>
+			  </div>
+			  <div class='max-[1023px]:hidden min-[1023px]:w-6/12'>
+				<img width={350} height={369} class='m-auto' src="images/whyUsCharacters.png" alt="A meeting between 2 people" />
+			  </div>
+			</div>
+		</div>
+		<WaveDown client:visible />
+		<div id='projects' class="ourProjects z-20 mt-5 relative mx-auto min-[1023px]:container">
+			<h1 class="text-3xl text-orange tracking-wider pl-5 mt-5 customOurProjectsUnderline font-['Orbitron'] font-bold">Onze Projecten</h1>
+			<p class="text-lg min-[1023px]:text-xl pl-5 mt-5 max-[1023px]:hidden mb-4 z-30 relative text-white">Ga met de muis over de afbeeldingen:</p>
+			<OurProjects client:visible />
+		</div>
+		<div id='pricing' class='mx-auto min-[1023px]:container'>
+			<h1 class="text-3xl min-[1023px]:text-4xl text-orange tracking-wider pl-5 mt-5 mb-5 customPricingUnderline font-['Orbitron'] font-bold">Prijzen</h1>
+			<Pricing client:visible />
+		</div>
+		<div id="info" class="accordion select-none mt-8 pr-5 pl-5 mx-auto min-[1023px]:container">
+			<h1 class="text-3xl min-[1023px]:text-4xl text-orange tracking-wider mt-5 mb-5 customInfoUnderline font-['Orbitron'] font-bold">
+			  Info
+			</h1>
+			<Info client:visible />
+		</div>
+		<div id="contact" class='mx-auto min-[1023px]:container'>
+			<h1 class="text-3xl min-[1023px]:text-4xl text-orange tracking-wider pl-5 mt-5 mb-5 customContactUnderline font-['Orbitron'] font-bold">Contact</h1>
+			<div class='flex justify-center'>
+			<div class="min-[1023px]:float-left min-[1023px]:w-6/12">
+				<Contact client:visible />
+			</div>
+			<div class='float-left max-lg:hidden min-[1023px]:w-6/12'>
+				<h2 class='text-orange p-4 pt-0 text-3xl tracking-wide'>Contact Informatie</h2>
+				<p class='text-white pl-4 text-lg tracking-wide'>Vul het formulier in en ons team neemt binnen 24 uur contact met u op.</p>
+				<p class='text-white pl-4 pt-2 text-lg tracking-wide'>Heeft u vragen die niet passen bij het doel van het formulier? Contacteer ons op: <a href = "mailto:support&#64;codecials.com">support&#64;codecials.com</a></p>
+				<img width={736} height={493} class='m-auto p-4' src="images/contactUs.png" alt="Man looking at the contact form" loading="lazy" />
+			</div>
+			</div>
+		</div>
+		<footer class="bg-gradient-to-t from-indigo-900 to-blue-800 text-white py-10">
+			<div class="container mx-auto px-6 md:px-8">
+			  <div class="flex flex-col md:flex-row justify-between items-center">
+				<div class="mb-6 md:mb-0">
+				  <h3 class="text-3xl font-bold">Codecials.</h3>
+				</div>
+				<div class="flex flex-col md:flex-row items-center">
+				  <div class="mb-4 md:mb-0 md:mr-6 flex items-center">
+					<svg
+					  class="w-5 h-5 text-gray-300"
+					  fill="none"
+					  stroke="currentColor"
+					  viewBox="0 0 24 24"
+					  xmlns="http://www.w3.org/2000/svg"
+					>
+					  <path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M22 11.08V12a10 10 0 11-5.93-9.14"
+					  ></path>
+					</svg>
+					<span class="ml-2 text-sm text-gray-300"><a href="mailto:support&#64;codecials.com">support&#64;codecials.com</a></span>
+				  </div>
+				  <div class="flex items-center">
+					<svg
+					  class="w-5 h-5 text-gray-300"
+					  fill="none"
+					  stroke="currentColor"
+					  viewBox="0 0 24 24"
+					  xmlns="http://www.w3.org/2000/svg"
+					>
+					  <path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M12 22s8-4 8-10V6a4 4 0 00-4-4H8a4 4 0 00-4 4v6c0 6 8 10 8 10z"
+					  ></path>
+					</svg>
+					<span class="ml-2 text-sm text-gray-300">(31) 0640511025</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="mt-8 text-center">
+				<p class="text-gray-300 text-sm">&copy; {new Date().getFullYear()} Codecials. All rights reserved.</p>
+				<p class="text-gray-300 text-sm">
+				  <a href="/terms-of-service" class="underline">
+					Terms of Service
+				  </a>
+				</p>
+			  </div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+.customOurProjectsUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.customOurProjectsUnderline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 8%;
+  width: 100%;
+  border-bottom: 3px solid #D6790F;
+}
+
+.customOurProjectsUnderlineV2 {
+  display: inline-block;
+  position: relative;
+}
+
+.customOurProjectsUnderlineV2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  width: 110%;
+  border-bottom: 3px solid #D6790F;
+}
+
+.ourProjects {
+  border-top: 3px solid #D6790F;
+  z-index: 20;
+  position: relative;
+  border-bottom: 3px solid #D6790F;
+}
+
+.customPricingUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.customPricingUnderline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 13%;
+  width: 170%;
+  border-bottom: 3px solid #D6790F;
+}
+
+.customInfoUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.customInfoUnderline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  width: 325%;
+  border-bottom: 3px solid #D6790F;
+}
+
+.customContactUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.customContactUnderline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 13%;
+  width: 160%;
+  border-bottom: 3px solid #D6790F;
+}
+
+.customWhyUsUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.customWhyUsUnderline::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 4%;
+  width: 50%;
+  border-bottom: 3px solid #D6790F;
+}
+
+.slider:not(.slick-initialized) .slide:not(:first-of-type) {display: none}
